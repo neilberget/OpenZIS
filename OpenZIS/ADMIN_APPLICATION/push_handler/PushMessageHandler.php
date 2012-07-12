@@ -51,11 +51,11 @@ class PushMessageHandler{
 				  and
 				  	response.agent_mode_id = 1
 				  and
-				  	event.zone_id = ".$this->zoneId."
+				  	response.zone_id = ".$this->zoneId."
 				  and
 					agent_registered.zone_id = ".$this->zoneId."
 				  and 
-				  	event.context_id = ".$this->contextId."
+				  	response.context_id = ".$this->contextId."
 				  and 
 					agent_registered.context_id = ".$this->contextId;
 					
@@ -198,11 +198,11 @@ class PushMessageHandler{
 				  and
 				  	request.agent_mode_id = 1
 				  and
-				  	event.zone_id = ".$this->zoneId."
+				  	request.zone_id = ".$this->zoneId."
 				  and
 					agent_registered.zone_id = ".$this->zoneId."
 				  and 
-				  	event.context_id = ".$this->contextId."
+				  	request.context_id = ".$this->contextId."
 				  and 
 					agent_registered.context_id = ".$this->contextId;				;
 				  
