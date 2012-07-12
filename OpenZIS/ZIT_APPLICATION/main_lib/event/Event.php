@@ -229,7 +229,7 @@ class Event {
         }
 
     if($event_destination_found == false){
-        GeneralError::generalError($m, "11", "1", "Generic Error", "SIF DestinationId not found.");	
+        GeneralError::genericError($m, "11", "1", "Generic Error", "SIF DestinationId not found.");	
 	}
 
 	}
