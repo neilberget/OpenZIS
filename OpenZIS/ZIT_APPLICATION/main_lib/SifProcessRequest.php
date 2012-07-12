@@ -322,6 +322,7 @@ class SifProcessRequest{
 	
 				case 'SIF_Event':
 #						require_once 'main_lib/FilterUtility.php';
+						require_once 'main_lib/provision/ProvisionError.php';
 						require_once 'main_lib/event/Event.php';
 						$_SESSION['SIF_MESSAGE_TYPE'] = 2;
 						$event = new Event($msgObj);
