@@ -13,7 +13,7 @@ class Event {
     var $dom;
 
     public function Event($m) {
-        $m->dom = $dom;
+        $this->dom = $m->dom;
         $this->processEvent($m);
     }
 
