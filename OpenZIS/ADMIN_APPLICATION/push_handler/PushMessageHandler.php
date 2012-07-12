@@ -45,11 +45,11 @@ class PushMessageHandler{
 				  inner join
 				  	agent_registered on response.agent_id_requester = agent_registered.agent_id
 				   where
-				  	request.status_id in (1,2)
+				  	response.status_id in (1,2)
 				  and
 				  	agent_registered.asleep = 0
 				  and
-				  	request.agent_mode_id = 1
+				  	response.agent_mode_id = 1
 				  and
 				  	event.zone_id = ".$this->zoneId."
 				  and
